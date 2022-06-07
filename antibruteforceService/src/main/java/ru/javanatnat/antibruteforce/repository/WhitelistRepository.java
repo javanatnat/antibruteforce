@@ -15,6 +15,5 @@ public interface WhitelistRepository extends CrudRepository<Whitelist, Long> {
     void deleteByIp(@Param("ip") Ipv4Type ip);
 
     @Override
-    @Query("SELECT w.* FROM whitelist w")
     List<Whitelist> findAll();
 }

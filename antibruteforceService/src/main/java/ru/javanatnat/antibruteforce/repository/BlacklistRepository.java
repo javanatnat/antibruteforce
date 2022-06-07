@@ -15,6 +15,5 @@ public interface BlacklistRepository extends CrudRepository<Blacklist, Long> {
     void deleteByIp(@Param("ip") Ipv4Type ip);
 
     @Override
-    @Query("SELECT b.* FROM blacklist b")
     List<Blacklist> findAll();
 }

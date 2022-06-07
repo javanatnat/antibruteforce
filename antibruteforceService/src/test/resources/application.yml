@@ -14,3 +14,7 @@ countAttempt:
   login: 2
   password: 3
   ip: 4
+
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: TRACE
